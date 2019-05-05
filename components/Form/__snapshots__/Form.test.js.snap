@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Form basic render snapshoot 1`] = `
+Array [
+  <Selectors
+    onChange={[MockFunction]}
+    onClick={[Function]}
+    selectors={
+      Array [
+        Object {},
+      ]
+    }
+  />,
+  <div
+    className="form--add-button"
+  >
+    <Button
+      onClick={[MockFunction]}
+      text="Add"
+    />
+  </div>,
+  <h4>
+    Total: 
+    1
+  </h4>,
+]
+`;

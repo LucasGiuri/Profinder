@@ -1,0 +1,53 @@
+@import '../../scss/colors';
+@import '../../scss/breakpoints';
+
+.button {
+  width: 100%;
+  padding: 6px 12px;
+  border: 2px solid $black;
+  background: $white;
+  font-weight: bold;
+  cursor: pointer;
+  
+  &.button-primary {
+    border-color: $green;
+    color: $green;
+
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+
+  &.button-danger {
+    border-color: $red;
+    color: $red;
+    
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+  }
+
+  &:disabled {
+    border-color: $grey;
+    color: $grey;
+
+    &:hover {
+      background: $white;
+      color: $grey;
+      cursor: not-allowed;
+    }
+  }
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+
+@media #{breakpoint('medium')} {
+  .button {
+    max-width: 12em;
+  }
+}

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Selectors Selectors with required params, basic render snapshoot 1`] = `
+<div
+  className="selectors__selector"
+>
+  <select
+    className="selectors__selector--select"
+    onChange={[Function]}
+  >
+    <option
+      value=""
+    >
+      Choose a service...
+    </option>
+    <option />
+  </select>
+  <Buttno
+    classes={
+      Array [
+        "button-danger",
+      ]
+    }
+    isDisabled={true}
+    onClick={[Function]}
+    text="Remove"
+  />
+</div>
+`;

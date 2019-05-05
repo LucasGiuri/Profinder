@@ -1,0 +1,12 @@
+.selectors__selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.selectors__selector--select {
+  width: 100%;
+  height: 28px;
+  margin-right: 16px;
+}

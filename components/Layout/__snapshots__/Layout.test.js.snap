@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Layout basic render snapshoot 1`] = `
+<div
+  className="layout"
+>
+  <div
+    className="layout__navigation"
+  >
+    <Header />
+  </div>
+  <div
+    className="layout__content"
+  >
+     
+    <h1>
+      Fake content 
+    </h1>
+  </div>
+</div>
+`;
