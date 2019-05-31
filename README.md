@@ -1,4 +1,4 @@
-# CABIFY PROJECT !
+# PROFINDER PROJECT !
 
 ## How to use
 
