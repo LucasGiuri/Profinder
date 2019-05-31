@@ -16,7 +16,7 @@ const Selectors = ({selectors, onChange, onClick}) => {
               </option>
             ))}
           </select>
-          <Button text="Remove" classes={['button-danger']} onClick={() => onClick(selector.id)} isDisabled={selectors.length === 1} />
+          <Button text="Remove" isDanger={true} onClick={() => onClick(selector.id)} isDisabled={selectors.length === 1} />
         </div>
       ))}
     </Fragment>

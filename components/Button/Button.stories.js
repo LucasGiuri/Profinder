@@ -10,7 +10,7 @@ storiesOf('Button')
     <Button classes={['button-primary']} text="FakeText"/>
   ))
   .add('Button with class button-danger', () => (
-    <Button classes={['button-danger']} text="FakeText"/>
+    <Button isDanger={true} text="FakeText"/>
   ))
   .add('Button with isDisabled=true', () => (
     <Button isDisabled={true} text="FakeText"/>

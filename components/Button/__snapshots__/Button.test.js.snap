@@ -1,41 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Button recives required props. matchToSnapshot 1`] = `
-<button
-  className="button "
+<Button
+  className=" "
+  color="inherit"
   disabled={false}
   onClick={[Function]}
+  variant="outlined"
 >
   FakeText
-</button>
-`;
-
-exports[`Button Button with class button-danger. matchToSnapshot 1`] = `
-<button
-  className="button button-danger"
-  disabled={true}
-  onClick={[Function]}
->
-  FakeText
-</button>
+</Button>
 `;
 
 exports[`Button Button with class button-primary. matchToSnapshot 1`] = `
-<button
-  className="button button-primary"
+<Button
+  className=" button-primary"
+  color="inherit"
   disabled={true}
   onClick={[Function]}
+  variant="outlined"
 >
   FakeText
-</button>
+</Button>
+`;
+
+exports[`Button Button with isDanger. matchToSnapshot 1`] = `
+<Button
+  className=" "
+  color="secondary"
+  disabled={true}
+  onClick={[Function]}
+  variant="outlined"
+>
+  FakeText
+</Button>
 `;
 
 exports[`Button Button with isDisabled=true. matchToSnapshot 1`] = `
-<button
-  className="button "
+<Button
+  className=" "
+  color="inherit"
   disabled={true}
   onClick={[Function]}
+  variant="outlined"
 >
   FakeText
-</button>
+</Button>
 `;
