@@ -1,29 +1,39 @@
 import './Button.scss';
+import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 
-const Button = ({onClick, text, classes, isDisabled}) => {
-  let buttonClasses = ['button'];
+const ButtonCmp = ({onClick, text, classes, isDanger, isDisabled}) => {
+  let buttonClasses = [''];
+  let color = 'inherit';
+
+  if (isDanger) {
+    color = 'secondary';
+  }
 
   if (classes) {
     buttonClasses = [...buttonClasses, classes];
   }
 
   return (
-    <button onClick={onClick} className={buttonClasses.join(' ')} disabled={isDisabled}>{text}</button>
+    <Button variant="outlined" color={color} className={buttonClasses.join(' ')} disabled={isDisabled} onClick={onClick}>
+      {text}
+    </Button>
   )
 }
 
-Button.propTypes = {
+ButtonCmp.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  isDanger: PropTypes.bool,
   isDisabled: PropTypes.bool,
   classes: PropTypes.array
 };
 
-Button.defaultProps = {
+ButtonCmp.defaultProps = {
   onClick: () => '',
   classes: [''],
+  isDanger: false,
   isDisabled: false
 };
 
-export default Button;
+export default ButtonCmp;

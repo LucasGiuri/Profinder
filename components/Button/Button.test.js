@@ -2,6 +2,8 @@ import React from 'react';
 import Button from './Button';
 import renderer from 'react-test-renderer';
 
+jest.mock('@material-ui/core/Button', () => 'Button');
+
 describe('Button', () => {
   it('Button recives required props. matchToSnapshot', () => {
     const text = 'FakeText';
@@ -24,9 +26,9 @@ describe('Button', () => {
     expect(tree).toMatchSnapshot();
   })
 
-  it('Button with class button-danger. matchToSnapshot', () => {
+  it('Button with isDanger. matchToSnapshot', () => {
     const text = 'FakeText';
-    const component = renderer.create(<Button text={text} isDisabled={true} classes={['button-danger']} />);
+    const component = renderer.create(<Button text={text} isDisabled={true} isDanger={true} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   })

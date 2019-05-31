@@ -144,51 +144,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Button_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Button.scss */ "./components/Button/Button.scss");
 /* harmony import */ var _Button_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Button_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 
-var _jsxFileName = "/Users/lucasgiuri/Desktop/Cabify/components/Button/Button.js";
+var _jsxFileName = "/home/lucas.giuri/Desktop/lucasProject/Cabify-test/components/Button/Button.js";
 
 
 
 
-var Button = function Button(_ref) {
+
+var ButtonCmp = function ButtonCmp(_ref) {
   var onClick = _ref.onClick,
       text = _ref.text,
       classes = _ref.classes,
+      isDanger = _ref.isDanger,
       isDisabled = _ref.isDisabled;
-  var buttonClasses = ['button'];
+  var buttonClasses = [''];
+  var color = 'inherit';
+
+  if (isDanger) {
+    color = 'secondary';
+  }
 
   if (classes) {
     buttonClasses = [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(buttonClasses), [classes]);
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    onClick: onClick,
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    variant: "outlined",
+    color: color,
     className: buttonClasses.join(' '),
     disabled: isDisabled,
+    onClick: onClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 18
     },
     __self: this
   }, text);
 };
 
-Button.propTypes = {
-  text: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string.isRequired,
-  onClick: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func,
-  isDisabled: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.array
+ButtonCmp.propTypes = {
+  text: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired,
+  onClick: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
+  isDanger: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  isDisabled: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.array
 };
-Button.defaultProps = {
+ButtonCmp.defaultProps = {
   onClick: function onClick() {
     return '';
   },
   classes: [''],
+  isDanger: false,
   isDisabled: false
 };
-/* harmony default export */ __webpack_exports__["default"] = (Button);
+/* harmony default export */ __webpack_exports__["default"] = (ButtonCmp);
 
 /***/ }),
 
@@ -220,7 +233,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Form_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Selectors_Selectors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Selectors/Selectors */ "./components/Selectors/Selectors.js");
 /* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button/Button */ "./components/Button/Button.js");
-var _jsxFileName = "/Users/lucasgiuri/Desktop/Cabify/components/Form/Form.js";
+var _jsxFileName = "/home/lucas.giuri/Desktop/lucasProject/Cabify-test/components/Form/Form.js";
 
 
 
@@ -321,7 +334,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Selectors_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Selectors_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/lucasgiuri/Desktop/Cabify/components/Selectors/Selectors.js";
+var _jsxFileName = "/home/lucas.giuri/Desktop/lucasProject/Cabify-test/components/Selectors/Selectors.js";
 
 
 
@@ -375,7 +388,7 @@ var Selectors = function Selectors(_ref) {
       }, service.value);
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
       text: "Remove",
-      classes: ['button-danger'],
+      isDanger: true,
       onClick: function onClick() {
         return _onClick(selector.id);
       },
@@ -664,7 +677,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _apis_services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../apis/services */ "./apis/services.js");
 /* harmony import */ var _components_Form_Form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Form/Form */ "./components/Form/Form.js");
 
-var _jsxFileName = "/Users/lucasgiuri/Desktop/Cabify/pages/index.js";
+var _jsxFileName = "/home/lucas.giuri/Desktop/lucasProject/Cabify-test/pages/index.js";
 
 
 
@@ -1043,8 +1056,19 @@ var applyRules = function applyRules(services) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/lucasgiuri/Desktop/Cabify/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /home/lucas.giuri/Desktop/lucasProject/Cabify-test/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@material-ui/core/Button":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/Button" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Button");
 
 /***/ }),
 

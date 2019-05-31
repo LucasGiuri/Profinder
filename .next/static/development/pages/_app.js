@@ -49,7 +49,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.scss */ "./components/Header/Header.scss");
 /* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Header_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _assets_icons_cabify_svg_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/icons/cabify.svg?react */ "./assets/icons/cabify.svg?react");
-var _jsxFileName = "/Users/lucasgiuri/Desktop/Cabify/components/Header/Header.js";
+var _jsxFileName = "/home/lucas.giuri/Desktop/lucasProject/Cabify-test/components/Header/Header.js";
 
 
 
@@ -59,7 +59,7 @@ var Header = function Header() {
     className: "header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_icons_cabify_svg_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -67,7 +67,7 @@ var Header = function Header() {
     alt: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }));
@@ -91,7 +91,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Header/Header */ "./components/Header/Header.js");
 /* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout.scss */ "./components/Layout/Layout.scss");
 /* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Layout_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/lucasgiuri/Desktop/Cabify/components/Layout/Layout.js";
+var _jsxFileName = "/home/lucas.giuri/Desktop/lucasProject/Cabify-test/components/Layout/Layout.js";
 
 
 
@@ -13197,7 +13197,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/lucasgiuri/Desktop/Cabify/pages/_app.js";
+var _jsxFileName = "/home/lucas.giuri/Desktop/lucasProject/Cabify-test/pages/_app.js";
 
 
 
@@ -13258,16 +13258,32 @@ function (_App) {
           lineNumber: 19
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
         },
         __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Component, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         },
         __self: this
       }))));

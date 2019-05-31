@@ -16,11 +16,7 @@ exports[`Selectors Selectors with required params, basic render snapshoot 1`] = 
     <option />
   </select>
   <Buttno
-    classes={
-      Array [
-        "button-danger",
-      ]
-    }
+    isDanger={true}
     isDisabled={true}
     onClick={[Function]}
     text="Remove"

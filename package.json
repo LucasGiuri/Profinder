@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@babel/core": "^7.4.0",
+    "@material-ui/core": "^4.0.1",
     "babel-preset-next": "^1.2.0",
     "babel-preset-react": "^6.24.1",
     "install": "^0.12.2",
@@ -35,7 +36,7 @@
     "babel-loader": "^8.0.5"
   },
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
     "test:coverage": "jest --coverage",
     "dev": "next",
     "build": "next build",
